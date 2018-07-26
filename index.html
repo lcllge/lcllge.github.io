@@ -173,7 +173,6 @@
 
   <div class="container sidebar-position-left 
   page-home">
-    <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
@@ -1854,20 +1853,25 @@
 
 
 
-
-<!-- LOCAL: You can save these files to your site and update links -->
-    
-        
-        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
-        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
-    
-<!-- END LOCAL -->
-
-    
-
-    
-
-
+   
+   
+   
+   
+   <link rel="stylesheet" href="https://billts.site/extra_css/gitment.css">
+   <script src="https://billts.site/js/gitment.js"></script>
+   
+       <script type="text/javascript">
+           var gitment = new Gitment({
+               id: window.location.pathname, 
+               owner: '',
+               repo: '',
+               oauth: {
+                   client_id: '',
+                   client_secret: '',
+               }});
+           gitment.render('gitment-container');
+       </script>
+   
 
 
 

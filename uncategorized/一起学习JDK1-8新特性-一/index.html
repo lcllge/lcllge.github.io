@@ -173,7 +173,6 @@
   
 
   <div class="container sidebar-position-left page-post-detail">
-    <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
@@ -474,7 +473,7 @@
     
       <div>
         <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
-    <img id="wechat_subscriber_qcode" src="/uploads/weixin.png" alt="兰州 wechat" style="width: 200px; max-width: 100%;"/>
+    <img id="wechat_subscriber_qcode" src="/uploads/weixin.jpg" alt="兰州 wechat" style="width: 200px; max-width: 100%;"/>
     <div>微信扫一扫,你会发现有很多新东西</div>
 </div>
 
@@ -896,44 +895,25 @@
 
 
 
-
-<!-- LOCAL: You can save these files to your site and update links -->
-    
-        
-        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
-        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
-    
-<!-- END LOCAL -->
-
-    
-
-    
-      <script type="text/javascript">
-      function renderGitment(){
-        var gitment = new Gitmint({
-            id: window.location.pathname, 
-            owner: 'lcllge',
-            repo: 'gitment',
-            
-            lang: "zh-Hans" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
-            
-            oauth: {
-            
-            
-                client_secret: 'dc580309738bfcec9f8519c9b287d992f5f7b837',
-            
-                client_id: 'Iv1.6229596e64913cb2'
-            }});
-        gitment.render('gitment-container');
-      }
-
-      
-      renderGitment();
-      
-      </script>
-    
-
-
+   
+   
+   
+   
+   <link rel="stylesheet" href="https://billts.site/extra_css/gitment.css">
+   <script src="https://billts.site/js/gitment.js"></script>
+   
+       <script type="text/javascript">
+           var gitment = new Gitment({
+               id: window.location.pathname, 
+               owner: '',
+               repo: '',
+               oauth: {
+                   client_id: '',
+                   client_secret: '',
+               }});
+           gitment.render('gitment-container');
+       </script>
+   
 
 
 
